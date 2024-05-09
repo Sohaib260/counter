@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasbeh Counter</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            background-color: black;
+        }
+        .div{
+          display: flex;
+          flex-direction: column;
+            text-align: center;
+            color: white;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            background-color:black;
+            
+        }
+        .buttons{
+            cursor: pointer;
+            align-items: center;
+            
+          
+            width: 100vw;
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+    <h1>Tasbeh counter</h1>
+    <h2 class="counter" id="tasbeehDisplay">0</h2>
+    <div class="buttons">
+    <Button id="incrementTasbeeh" onclick="incrementTasbeeh()">Click</Button>
+    <Button id="reset" onclick="resetTasbeeh()">Reset</Button>
+</div>
+ </div>
+</body>
+<script>
+let tasbeehCount = 0;
+
+function incrementTasbeeh() {
+    tasbeehCount++;
+    document.getElementById('tasbeehDisplay').innerText = tasbeehCount;
+}
+
+function resetTasbeeh() {
+    tasbeehCount = 0;
+    document.getElementById('tasbeehDisplay').innerText = tasbeehCount;
+    
+}
+
+
+</script>
+</html>
